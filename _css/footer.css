@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    min-height: calc(25vh - 85px);
+    padding-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Faz com que o rodapé ocupe a largura total */
+    margin-top: auto; /* Faz com que o rodapé seja empurrado para o final */
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo do footer */
+  }
+  
+  .footer-nav, .social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os links no footer */
+    gap: 10px; /* Espaçamento entre os links */
+    margin: 10px 0;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+    outline: none; /* Remove o contorno azul ao focar no link */
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+    color: #ff0066;
+  }
+  
